@@ -1,0 +1,50 @@
+<div class="container-1">
+  <div class="form-container">
+    <div class="title">Register</div>
+    <form [formGroup]="registerForm">
+    <!-- Registration Form -->
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Your Name</mat-label>
+        <input matInput formControlName="Name"/>
+        <!-- Name Validators -->
+        <mat-error *ngIf="registerForm.controls.Name.hasError('required')">
+          name required
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls.Name.hasError('maxlength')">
+          name must be less than 10 characters
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Your Email</mat-label>
+        <input matInput formControlName="Email"/>
+      <!--Email Validator  -->
+        <mat-error *ngIf="registerForm.controls.Email.hasError('required')">
+          email required
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls.Email.hasError('email')">
+          invalid email
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enter Your Password</mat-label>
+        <input type="password" matInput formControlName="Password"/>
+        <!-- Password Validator -->
+        <mat-error *ngIf="registerForm.controls.Password.hasError('required')">
+          Password required
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls.Password.hasError('minlength')">
+          Password must be at least 6 characters long
+        </mat-error>
+      </mat-form-field>
+
+    </form>
+
+    <div class="button-container-r">
+      <button mat-raised-button [disabled]="registerForm.invalid" (click)="create()" class="register-button">Register</button>
+      <p>OR</p>
+      <button routerLink="/login" mat-button>LOGIN</button>
+    </div>
+  </div>
+</div>

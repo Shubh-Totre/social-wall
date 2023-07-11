@@ -1,0 +1,66 @@
+{
+  "user": [
+    {
+      "Name": "Jay",
+      "Email": "jay@gmail.com",
+      "Password": "jay123",
+      "id": 1
+    },
+    {
+      "Name": "shubham",
+      "Email": "shubham@gmail.com",
+      "Password": "shubh123",
+      "id": 2
+    },
+    {
+      "Name": "shubham",
+      "Email": "shubham@gmail.com",
+      "Password": "shubh123",
+      "id": 3
+    },
+    {
+      "Name": "shubham",
+      "Email": "shubham@gmail.com",
+      "Password": "shubh123",
+      "id": 4
+    },
+    {
+      "Name": "admin",
+      "Email": "admin@gmail.com",
+      "Password": "admin123",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "text": "new",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/sbook-369ab.appspot.com/o/images%2F1688464402455?alt=media&token=8476ae2a-2a76-4792-97de-8b721f5a0643",
+      "likes": [],
+      "comments": [],
+      "id": 1
+    },
+    {
+      "text": "sdfsdf",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/sbook-369ab.appspot.com/o/images%2F1688465844639?alt=media&token=efdf1ea3-0a4b-418a-894b-9d49b83327a9",
+      "likes": [],
+      "comments": [],
+      "id": 2
+    },
+    {
+      "text": "First post",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/sbook-369ab.appspot.com/o/images%2F1688467239808?alt=media&token=94a3d636-7fb9-4644-998f-3973828a5092",
+      "likes": [
+        5
+      ],
+      "comments": [],
+      "id": 3
+    },
+    {
+      "text": "",
+      "imageURL": "",
+      "likes": [],
+      "comments": [],
+      "id": 4
+    }
+  ]
+}
